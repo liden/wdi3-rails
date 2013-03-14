@@ -32,7 +32,7 @@ describe 'POST /subscribers' do
   end
 end
 
-  describe 'JS cancel_subscriber_form' do
+  describe 'JS cancel_subscriber_form()' do
     it 'it removes the create subscriber form', :js => true do
       visit root_path
       click_link('Register')
