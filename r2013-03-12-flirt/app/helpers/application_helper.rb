@@ -1,9 +1,7 @@
 module ApplicationHelper
   def login_nav
-    # if @auth.present?
-    #   link_to(@auth.email, login_path, :method => 'delete', :class => 'button tiny alert')
-    # else
-    # link_to('Logout', logout_path, :class => 'button tiny success') if @user.present?
-    # end
+    if @auth.present?
+      "<li>#{link_to(@auth.username, '/login', :method => :delete, :remote => true, :class => 'button tiny alert username')}</li>"
+    end
   end
 end

@@ -17,15 +17,6 @@ describe 'Session' do
     end
   end
 
-  describe 'JS cancel_login_form()' do
-    it 'removes the login form', :js => true do
-      visit root_path
-      click_link('Login')
-      click_button('Cancel')
-      page.should_not have_button('Start Flirting')
-    end
-  end
-
   describe 'POST /login' do
     let(:user) {User.create(email: 'bob@gmail.com', username: 'Bob', password: 'a', password_confirmation: 'a')}
 
@@ -36,6 +27,28 @@ describe 'Session' do
       fill_in('Password', :with => 'a')
       click_button('Start Flirting')
       page.should_not have_button('Start Flirting')
+      expect(page.has_link?('Bob')).to be true
+      page.find_link('Register').visible?.should be_false
+      page.find_link('Login').visible?.should be_false
+      visit root_path
+      expect(page.has_link?('Bob')).to be true
+      page.find_link('Register').visible?.should be_false
+      page.find_link('Login').visible?.should be_false
+    end
+
+    it 'logs the user out of the system', :js => true do
+      visit root_path
+      click_link('Login')
+      fill_in('Email', :with => user.email)
+      fill_in('Password', :with => 'a')
+      click_button('Start Flirting')
+      click_link('Bob')
+      page.should have_link('Register')
+      page.should have_link('Login')
+      visit root_path
+      expect(page.has_link?('Bob')).to be false
+      page.should have_link('Register')
+      page.should have_link('Login')
     end
 
     it 'logs the user into the system if credentials are incorrect', :js => true do
@@ -46,6 +59,15 @@ describe 'Session' do
       click_button('Start Flirting')
       page.should have_button('Start Flirting')
     end
+
   end
 
+  describe 'JS cancel_login_form()' do
+    it 'removes the login form', :js => true do
+      visit root_path
+      click_link('Login')
+      click_button('Cancel')
+      page.should_not have_button('Start Flirting')
+    end
+  end
 end
