@@ -1,0 +1,21 @@
+%h1 bank of wdi3
+#message
+
+.row
+  %h2 checking
+  #c_balance.balance
+.row
+  %p
+    = text_field_tag 'c_amount'
+    = submit_tag 'deposit', :id => 'c_deposit', :class => 'btn'
+    = submit_tag 'withdraw', :id => 'c_withdraw', :class => 'btn'
+
+.row
+  %h2 savings
+  #s_balance.balance
+.row
+  %p
+    = text_field_tag 's_amount'
+    = submit_tag 'deposit', :id => 's_deposit', :class => 'btn'
+    = submit_tag 'withdraw', :id => 's_withdraw', :class => 'btn'
+

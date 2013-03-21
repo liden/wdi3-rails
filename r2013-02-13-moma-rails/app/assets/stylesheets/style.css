@@ -1,0 +1,57 @@
+#container
+{
+  width: 960px;
+  margin: 0 auto;
+}
+
+.image
+{
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+
+.name
+{
+  width: 150px;
+  float: right;
+}
+
+.inner_container
+{
+  border: 1px solid #3b3b3b;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 10px 10px 0px 0;
+  width: 280px;
+  float: left;
+}
+
+img
+{
+  width: 100px;
+  height: 100px;
+  border: 1px solid #3b3b3b;
+  margin: 10px 0;
+}
+
+img
+{
+  width: 100px;
+  height: 100px;
+  border: 1px solid #3b3b3b;
+  margin: 10px 0;
+}
+
+nav
+{
+  margin: 10px 0;
+}
+
+nav li
+{
+  list-style: none;
+  display: inline;
+}
+
+

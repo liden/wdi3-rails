@@ -1,0 +1,6 @@
+<% @paintings.each do |painting| %>
+  <div class='inner_container'>
+    <div class='image'><%= image_tag(painting.image) %></div>
+    <div class='name'><%= link_to painting.title, painting %></div>
+  </div>
+<% end %>

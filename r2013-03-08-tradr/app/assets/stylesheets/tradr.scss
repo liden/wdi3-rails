@@ -1,0 +1,33 @@
+#charts > div
+{
+  width: 300px;
+  border: 1px solid black;
+  float: left;
+}
+
+.chart
+{
+  height: 150px;
+}
+
+.checkbox
+{
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 11px;
+}
+
+.clear
+{
+  clear: both;
+}
+
+button
+{
+  display: inline;
+}
+
+table
+{
+  font-size: 15px;
+}

@@ -1,0 +1,33 @@
+h1
+{
+  font-family: Arial;
+}
+
+#boxes
+{
+  margin-top: 5px;
+}
+
+.box
+{
+  float: left;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  min-width: 42px;
+  height: 38px;
+  border: 1px dashed black;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  font-size: 22px;
+  padding-top: 12px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.clear
+{
+  clear: both;
+}

@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "photo.js",
+  "sourceRoot": "",
+  "sources": [
+    "photo.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;CAAA;CAAA;CAAA"
+}

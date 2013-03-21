@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>R20130213MomaRails</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div id='container'>
+    <nav>
+      <ul>
+        <li><%= link_to('artists', artists_path) %></li>
+        <li><%= link_to('paintings', paintings_path) %></li>
+        <li><%= link_to('new artist', new_artist_path) %></li>
+        <li><%= link_to('new painting', new_painting_path) %></li>
+      </ul>
+    </nav>
+
+  <%= yield %>
+  </div>
+</body>
+</html>

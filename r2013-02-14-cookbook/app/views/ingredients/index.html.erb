@@ -1,0 +1,15 @@
+<h2>Ingredients</h2>
+<div id='sub_nav'>
+  <%= link_to 'add an ingredient', new_ingredient_path %>
+</div>
+
+<% @ingredients.each do |ingredient| %>
+  <%= image_tag(ingredient.image) %>
+  <%= link_to(ingredient.name, ingredient) %>
+  <%= ingredient.measurement %>
+  <%= ingredient.cost %>
+
+  <%= link_to 'edit ingredient', edit_ingredient_path(ingredient) %>
+  <%= link_to 'delete ingredient', ingredient, :method => :post, :confirm => 'delete ingredient?' %>
+  <br>
+<% end %>

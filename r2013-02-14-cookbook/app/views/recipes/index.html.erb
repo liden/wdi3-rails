@@ -1,0 +1,11 @@
+<h2>Recipes</h2>
+<div id='sub_nav'>
+  <%= link_to 'add a recipe', new_recipe_path %>
+</div>
+
+<% @recipes.each do |recipe| %>
+  <%= image_tag(recipe.image) %>
+  <%= link_to(recipe.name, recipe) %>
+  <%= recipe.book.title if recipe.book.present? %>
+<% end %>
+

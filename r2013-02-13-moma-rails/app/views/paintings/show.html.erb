@@ -1,0 +1,12 @@
+<div class='inner_container'>
+  <ul>
+    <li><%= image_tag(@painting.image) %></li>
+    <li><%= @painting.artist.name %></li>
+    <li><%= @painting.title %></li>
+    <li><%= @painting.year %></li>
+    <li><%= @painting.medium %></li>
+    <li><%= @painting.style %></li>
+  </ul>
+  <%= link_to 'delete', @painting, :method => :delete, :confirm => 'do you really want to delete this?' %>
+  <%= link_to 'edit', edit_painting_path(@painting) %>
+</div>

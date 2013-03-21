@@ -1,0 +1,16 @@
+@import 'colors';
+
+#users
+{
+  img
+  {
+    width: 100px;
+    height: 100px;
+  }
+
+  td
+  {
+    color: $row_fg0_color;
+    background-color: $row_bg0_color;
+  }
+}

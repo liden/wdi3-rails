@@ -1,0 +1,2 @@
+<li><%= link_to('Edit', edit_users_path) %></li>
+<li><%= link_to(@auth.name + ' - ' + number_to_currency(@auth.balance), login_path, :method => :delete, :confirm => "Are you sure?") %>

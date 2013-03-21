@@ -1,0 +1,8 @@
+<% @artists.each do |artist| %>
+  <div class='inner_container'>
+    <ul>
+      <li><%= image_tag(artist.image) %></li>
+      <li><%= link_to artist.name, artist %></li>
+    </ul>
+  </div>
+<% end %>

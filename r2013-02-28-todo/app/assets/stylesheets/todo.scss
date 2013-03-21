@@ -1,0 +1,46 @@
+li
+{
+  list-style-type: none;
+}
+
+#map_canvas
+{
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  margin: 15px;
+}
+
+// .hide
+// {
+//   display: hidden;
+// }
+
+.priority
+{
+  float: left;
+}
+
+.color
+{
+  border: 1px solid black;
+  width: 25px;
+  height: 25px;
+  margin: 0px 5px 5px 5px;
+  border-radius: 5px;
+}
+
+.color:hover
+{
+  border: 1px solid white;
+}
+
+.task
+{
+
+}
+
+.clear
+{
+  clear: both;
+}

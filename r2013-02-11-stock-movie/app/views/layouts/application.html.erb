@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>R20130211 Stock Movie</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href='/home'>home</a></li>
+      <li><a href='/about'>about</a></li>
+      <li><a href='/faq'>faq</a></li>
+      <li><a href='/stock'>stock</a></li>
+      <li><a href='/movie'>movie</a></li>
+    </ul>
+  </nav>
+
+<%= yield %>
+
+</body>
+</html>

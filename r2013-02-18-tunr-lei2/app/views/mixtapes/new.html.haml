@@ -1,0 +1,14 @@
+.row
+  .nine.columns.offset-by-three
+    = render(:partial => 'shared/errors', :locals => {:object => @mixtape})
+
+    = form_for @mixtape do |f|
+      .row
+        .two.mobile-one.columns
+          .right.inline
+            = f.label :name
+        .ten.mobile-three.columns
+          = f.text_field :name, :autofocus => true
+        .ten.mobile-three.columns.offset-by-two
+          = f.hidden_field :user_id, :value => @auth.id
+          = f.submit nil, :class => 'button radius'

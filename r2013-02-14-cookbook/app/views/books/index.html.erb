@@ -1,0 +1,21 @@
+<h2>Books</h2>
+<div id='sub_nav'>
+  <%= link_to 'add a cookbook', new_book_path %>
+</div>
+
+<ol>
+<% @books.each do |book| %>
+  <li>
+    <ul>
+      <li><%= image_tag(book.image) %></li>
+      <li><%= link_to(book.title, book) %></li>
+      <li><%= book.cuisine %></li>
+      <li><%= book.chef %></li>
+    </ul>
+  </li>
+
+  <%= link_to 'edit book', edit_book_path(book) %>
+<br>
+<%= link_to 'delete book', book, :method => :delete, :confirm => 'delete book?' %>
+<% end %>
+</ol>

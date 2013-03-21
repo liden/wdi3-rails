@@ -1,0 +1,22 @@
+%p.newlink= link_to('Edit Song', edit_song_path(@song), :class => 'button radius') if is_admin
+
+
+%h2= @song.name
+.show
+  = image_tag(@song.image)
+
+- if @song.artist.present?
+  %h3= 'Artist'
+  %p= link_to(@song.artist.name, artist_path(@song.artist.id))
+
+- if @song.album.present?
+  %h3= 'Album'
+  %p= link_to(@song.album.name, album_path(@song.album.id))
+
+- if @song.genres.present?
+  %h3= 'Genres'
+  %ul
+    - @song.genres.each do |genre|
+      %li= link_to(genre.name, genre_path)
+
+%button.radius= link_to(number_to_currency(@song.cost), purchase_song_path)

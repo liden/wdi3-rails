@@ -1,0 +1,17 @@
+@import 'colors';
+
+#artists
+{
+  img
+  {
+    width: 200px;
+    height: 200px;
+  }
+
+  td
+  {
+    background-color: $cell_bg_color;
+    color: $reverse;
+  }
+
+}

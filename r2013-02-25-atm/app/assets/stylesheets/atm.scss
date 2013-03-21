@@ -1,0 +1,96 @@
+@import 'colors';
+@import 'fonts';
+
+body
+{
+  background-color: $grey;
+}
+
+#container
+{
+  width: 760px;
+  margin: 0 auto;
+  padding: 0 40px 15px 40px;
+  background-color: $light-cream;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  height: 500px;
+}
+
+h1
+{
+  color: $dark-red;
+  font: 104px $head;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 76px;
+  padding-top: 40px;
+}
+
+h2
+{
+  color: $grey;
+  font: 40px $head;
+  text-transform: uppercase;
+  width: 60%;
+  float: left;
+}
+
+.zero
+{
+  border: 1px dashed $dark-red;
+  padding: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#message
+{
+  font: 400 16px $main;
+  color: $cream;
+  background-color: $grey;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  text-align: center;
+  padding: 10px;
+}
+
+.row
+{
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.btn
+{
+  font: 700 10px $main;
+  color: white;
+  background-color: $grey;
+  height: 30px;
+  width: 60px;
+  border: 1px solid $dark-grey;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.balance
+{
+  width: 30%;
+  margin-top: 28px;
+  float: right;
+  text-align: right;
+  color: $grey;
+  font: 40px $head;
+}
+
+#s_amount, #c_amount
+{
+  height: 25px;
+  width: 30%;
+  float: right;
+  margin-top: 15px;
+}

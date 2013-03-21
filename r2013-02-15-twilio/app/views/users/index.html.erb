@@ -1,0 +1,10 @@
+<% @users.each do |user| %>
+  <ul>
+    <form method='post' action='/users/sendtxt'>
+      <li><%= user.name %></li>
+      <input type='hidden' name='first' value='<%= user.name %>'>
+      <li><input type='text' name='body'></li>
+      <li><button>send text</button></li>
+    </form>
+  </ul>
+<% end %>

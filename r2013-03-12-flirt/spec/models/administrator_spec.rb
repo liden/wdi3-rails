@@ -50,5 +50,4 @@ end
       expect(administrator.tel).to eq '1-111-222-3333'
     end
   end
-
 end
