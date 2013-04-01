@@ -1,7 +1,0 @@
-%h2= @auth.name
-
-%h3= @mixtape.name
-%ul
-  - @mixtape.songs.each do |song|
-    %li= song.name
-    %li= audio_tag(song.filename, :controls => true)

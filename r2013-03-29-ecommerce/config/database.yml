@@ -1,0 +1,26 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: r2013-03-29-cm-ecommerce_development
+  pool: 5
+  host: localhost
+  username: lulu
+  password:
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: r2013-03-29-cm-ecommerce_test
+  pool: 5
+  host: localhost
+  username: lulu
+  password:
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: r2013-03-29-cm-ecommerce_production
+  pool: 5
+  host: localhost
+  username: lulu
+  password:
